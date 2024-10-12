@@ -1,4 +1,4 @@
-:hero
+:hero{title="test"}
 
 # Nuxt Content
 
