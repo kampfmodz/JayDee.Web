@@ -1,0 +1,1 @@
+import{f as a}from"./Dnd51l0P.js";import{D as c,k as o,c as f,e as i}from"./Y2IzrhQK.js";const _=(e,t,n,...r)=>e[t]?c({...e,[t]:()=>a(e[t](),n==null?void 0:n.unwrap)},t,n,...r):c(e,t,n,...r),d={},u={class:"container mx-auto px-4 w-2/3"};function l(e,t){return f(),i("div",u,[_(e.$slots,"default")])}const k=o(d,[["render",l]]);export{k as default};

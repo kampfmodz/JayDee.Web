@@ -1,0 +1,1 @@
+import{d as e,B as t,C as o,c as a,e as n}from"./Y2IzrhQK.js";const u=e({__name:"youtube",setup(r){return t(()=>{o("https://discord.gg/jaydee",{external:!0})}),(s,c)=>(a(),n("div"))}});export{u as default};
