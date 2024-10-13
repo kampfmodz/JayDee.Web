@@ -1,1 +1,0 @@
-import t from"./pCitgr6W.js";import{k as e,e as r,i as c,c as n}from"./H8raV46c.js";import"./DilfrO_l.js";import"./idDPQ00a.js";import"./Dnd51l0P.js";import"./BIRKPZjP.js";import"./D51Idz9S.js";import"./DtORekz1.js";const _={};function m(i,s){const o=t;return n(),r("main",null,[c(o)])}const B=e(_,[["render",m]]);export{B as default};

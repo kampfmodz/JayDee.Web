@@ -1,1 +1,0 @@
-import{d as e,B as t,C as o,c as a,e as n}from"./H8raV46c.js";const p=e({__name:"discord",setup(r){return t(()=>{o("https://discord.gg/jaydee",{external:!0})}),(s,c)=>(a(),n("div"))}});export{p as default};
