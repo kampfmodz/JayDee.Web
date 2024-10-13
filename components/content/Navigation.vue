@@ -4,8 +4,10 @@
   <nav class="bg-white border-gray-200 ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
+        <img
+          src="https://yt3.googleusercontent.com/ytc/AIdro_moBsxaAqqGsg3WI5-dl4FHYNOByipJCca7oADTsQBsCu0=s160-c-k-c0x00ffffff-no-rj"
+          class="h-8 rounded-full" alt="JayDee Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap">JayDee Gaming</span>
       </NuxtLink>
       <button data-collapse-toggle="navbar-default" type="button"
         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
