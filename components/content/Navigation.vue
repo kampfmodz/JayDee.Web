@@ -1,48 +1,37 @@
 <template>
-  <nav class="flex flex-wrap items-center justify-between p-3 bg-[#e8e8e5]">
-    <div class="text-xl">Bappa Flour mill</div>
-    <div class="flex md:hidden">
-      <button id="hamburger">
-        <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40"
-          height="40" />
-        <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40"
-          height="40" />
+
+
+  <nav class="bg-white border-gray-200 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <NuxtLink to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
+      </NuxtLink>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
       </button>
-    </div>
-    <div class=" toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 md:border-none">
-      <a href="#home" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">Home
-      </a>
-      <a href="#services" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">Services
-      </a>
-      <a href="#aboutus" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">About us
-      </a>
-      <a href="#gallery" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">Gallery
-      </a>
-      <a href="#contactUs" class="block md:inline-block hover:text-blue-500 px-3 py-3 md:border-none">Visit Us
-      </a>
-    </div>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
 
-    <div class="toggle w-full text-end hidden md:flex md:w-auto px-2 py-2 md:rounded">
-      <a href="tel:+123">
-        <div class="flex justify-end">
-          <div class="flex items-center h-10 w-30 rounded-md bg-[#c8a876] text-white font-medium p-2">
-            <!-- Heroicon name: phone -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-            </svg>
-            Discord beitreten
-          </div>
-        </div>
-      </a>
-    </div>
 
+        <ContentNavigation v-slot="{ navigation }">
+
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white ">
+            <li v-for="link of navigation" :key="link._path">
+              <NuxtLink :to="link._path"
+                class="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:p-0 "
+                activeClass="text-blue-500" aria-current="page">{{ link.title }}</NuxtLink>
+            </li>
+          </ul>
+        </ContentNavigation>
+      </div>
+    </div>
   </nav>
+
 </template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style></style>
