@@ -1,8 +1,8 @@
 <template>
-  <div class="flex bg-gray-200 w-2/3 mx-auto rounded-lg overflow-hidden my-6 flex-wrap">
+  <div class="flex bg-gray-200 w-2/3 mx-auto rounded-lg overflow-hidden my-6 max-sm:flex-wrap">
     <img :src="avatar" class="h-full w-72 max-h-60" />
     <div class="mt-4">
-      <div class="flex items-center flex-wrap">
+      <div class="flex items-center max-md:flex-wrap">
         <h1 class="text-5xl font-semibold mr-4">{{ name }}</h1>
         <Badge :text="role_text" :color="role_color" :icon="role_icon" />
         <Badge :text="discord_name" color="discord" icon="skill-icons:discord" />

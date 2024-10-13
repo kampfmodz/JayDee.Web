@@ -11,14 +11,16 @@
           {{ title }}
         </h1>
         <p class="font-regular text-xl mb-8 mt-4">{{ description }}</p>
-        <NuxtLink to="https://www.youtube.com/c/JayDeeGaming"
-          class="px-6 py-3 bg-gray-700 text-white font-medium rounded-lg hover:bg-white hover:text-black  transition duration-200 mr-4 ">
-          <Icon name="logos:youtube-icon" class="mr-2" size="15px" />YouTube
-        </NuxtLink>
-        <NuxtLink to="https://discord.gg/jaydee"
-          class="px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-700 hover:text-white transition duration-200 mx-4">
-          <Icon name="logos:discord-icon" class="mr-2" size="15px" />Discord
-        </NuxtLink>
+        <div class="flex flex-wrap justify-center">
+          <NuxtLink to="https://www.youtube.com/c/JayDeeGaming"
+            class="px-6 py-3 bg-gray-700 text-white font-medium rounded-lg hover:bg-white hover:text-black  transition duration-200 md:mr-4 ">
+            <Icon name="logos:youtube-icon" class="mr-2" size="15px" />YouTube
+          </NuxtLink>
+          <NuxtLink to="https://discord.gg/jaydee"
+            class="px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-700 hover:text-white transition duration-200 md:mx-4">
+            <Icon name="logos:discord-icon" class="mr-2" size="15px" />Discord
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
