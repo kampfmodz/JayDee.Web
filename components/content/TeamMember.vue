@@ -1,6 +1,6 @@
 <template>
   <div class="flex bg-gray-200 w-2/3 mx-auto rounded-lg overflow-hidden my-6">
-    <img :src="avatar" class="w-5/6 h-full max-w-72" />
+    <img :src="avatar" class="h-full w-72" />
     <div class="mt-4">
       <div class="flex items-center">
         <h1 class="text-5xl font-semibold mr-4">{{ name }}</h1>
